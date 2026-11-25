@@ -1,0 +1,294 @@
+/* 
+   MEDIVIA - Patient Case Taking Software
+   CSS Stylesheet
+   Subject: CSE326 (HTML, CSS & JavaScript)
+   Team Members: Parth Narayan Dubey, Aryan Sharma, Rohit Kumar
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #1a73e8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 14px 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #1557b0;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8f0fe;
+    padding-bottom: 8px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-blue {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+.btn-blue:hover {
+    background-color: #1557b0;
+}
+
+.btn-grey {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-grey:hover {
+    background-color: #5a6268;
+}
+
+.btn-red {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.btn-red:hover {
+    background-color: #c82333;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+/* Home Page Cards Grid */
+.grid-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.grid-item h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1a73e8;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #444444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+.form-group input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.form-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Search Bar on Patient List */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 9px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+table th {
+    background-color: #e9ecef;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+table td {
+    padding: 10px 12px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.no-data {
+    text-align: center;
+    color: #777777;
+    padding: 20px;
+}
+
+/* Patient Info Box on Case Page */
+.info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #666666;
+}

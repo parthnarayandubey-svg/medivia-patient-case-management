@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Taking - MEDIVIA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MEDIVIA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register Patient</a></li>
+                <li><a href="patients.html">View Patients</a></li>
+                <li><a href="case.html" class="active">Case Taking</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <div class="card">
+            <h2>Patient Case Taking</h2>
+            
+            <!-- Patient Selection -->
+            <div class="form-group">
+                <label for="selectPatient">Select Patient:</label>
+                <select id="selectPatient">
+                    <option value="">-- Choose a Patient --</option>
+                </select>
+            </div>
+
+            <!-- Patient Information Card -->
+            <div id="patientDetailsBox" class="info-box" style="display: none;">
+                <h3>Selected Patient Details</h3>
+                <p><strong>Patient ID:</strong> <span id="dispId">-</span></p>
+                <p><strong>Name:</strong> <span id="dispName">-</span></p>
+                <p><strong>Age:</strong> <span id="dispAge">-</span></p>
+                <p><strong>Phone:</strong> <span id="dispPhone">-</span></p>
+            </div>
+
+            <!-- Case Taking Form -->
+            <form id="caseForm">
+                <fieldset>
+                    <legend>Clinical Case Details</legend>
+
+                    <div class="form-group">
+                        <label for="caseSymptoms">Symptoms:</label>
+                        <textarea id="caseSymptoms" rows="3" placeholder="Enter patient symptoms"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseDiagnosis">Diagnosis:</label>
+                        <textarea id="caseDiagnosis" rows="3" placeholder="Enter clinical diagnosis"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseMedicine">Medicine:</label>
+                        <textarea id="caseMedicine" rows="3" placeholder="Enter prescribed medicines"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseRemarks">Doctor Remarks:</label>
+                        <textarea id="caseRemarks" rows="3" placeholder="Enter doctor remarks and advice"></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" id="saveCaseBtn" class="btn btn-blue">Save Case</button>
+                        <a href="patients.html" class="btn btn-grey">Back to Patients</a>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MEDIVIA - Patient Case Taking Software | 1st Year B.Tech CSE326 Project</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/case.js"></script>
+</body>
+</html>
